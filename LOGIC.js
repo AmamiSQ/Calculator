@@ -1,2 +1,14 @@
-//empty sheet :D
-//......FOR NOW
+
+function input(num){
+    form1.result.value+=num;
+
+}
+
+function backspace(){
+    form1.result.value+='';
+}
+
+
+function equal(){
+
+}

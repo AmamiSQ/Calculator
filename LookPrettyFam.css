@@ -8,29 +8,78 @@ body{
     padding: 50px;
     margin: 200px auto;
     background-color: grey;
+    border-radius: 80px;
    }
    .screen{
        width: 400px;
-       height: 50px;
+       height: 70px;
        border: 10px;
        background-color: rgb(200, 236, 248);
-   }
+       border-radius: 100px;
 
-   .textresult{
-       position: relative;
-       top: 15px;
-       right: 10px;
+       font-size: 50px;
        text-align: right;
    }
 
    .btn{
-       width: 70px;
-       height: 70px;
+       width: 80px;
+       height: 80px;
        position: relative;
-       top: 40px;
+       top: 25px;
+       left: 25px;
        font-size: 25px;  
        margin: 2px;  
        cursor: pointer;
-       background-color: red;  
+       background-color: rgb(255, 0, 191);  
        color: white; 
+       border-radius: 100px;
    }
+
+   .btn0{
+       width: 165px;
+       height: 70px;
+       position: relative;
+       top: 25px;
+       left: 25px;
+       font-size: 25px;  
+       margin: 2px;  
+       cursor: pointer;
+       background-color: rgb(255, 0, 191);  
+       color: white; 
+       border-radius: 100px;
+   }
+
+   .actbtn{
+       width: 80px;
+       height: 80px;
+       position: relative;
+       top: 25px;
+       left: 25px;
+       font-size: 35px;  
+       margin: 2px;  
+       cursor: pointer;
+       background-color: rgb(98, 0, 255);  
+       color: white;
+       border-radius: 100px; 
+   }
+
+   .act2btn{
+       width: 80px;
+       height: 80px;
+       position: relative;
+       top: 25px;
+       left: 25px;
+       font-size: 35px;  
+       margin: 2px;  
+       cursor: pointer;
+       background-color: rgb(0, 132, 255);  
+       color: white; 
+       border-radius: 100px;
+   }
+
+   .btn:hover{background-color: rgba(255, 0, 191, 0.562);}
+   .btn0:hover{background-color: rgba(255, 0, 191, 0.562);}
+   .actbtn:hover{background-color: rgba(98, 0, 255, 0.548);}
+   .act2btn:hover{background-color: rgba(0, 132, 255, 0.377);}
+
+   

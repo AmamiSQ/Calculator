@@ -7,35 +7,59 @@
     <title>Calculator</title>
 </head>
 <link rel="stylesheet" href="LookPrettyFam.css">
+<script src="LOGIC.js"></script>
 <body>
+    <var></var>
     <div>
         <div class="box">
-            <div class="screen">
-                <div class="textresult"> test </div>
+            <div class="formstyle">
+                <form name="form1">
+                    <input class="screen" name="result">
+                </form>
             </div>
 
             <div>
-            <tr>
-                <td> <input  class = "btn" type = "button" value = "1"> </td> 
-                <td> <input  class = "btn" type = "button" value = "2"> </td> 
-                <td> <input  class = "btn" type = "button" value = "3"> </td> 
-            </tr>
+                <tr>
+                    <td> <input  class = "act2btn" type = "button" value = "("> </td> 
+                    <td> <input  class = "act2btn" type = "button" value = ")"> </td> 
+                    <td> <input  class = "act2btn" type = "button" value = "←" onclick="backspace()"> </td> <!-- clears everything for now-->
+                    <td> <input  class = "actbtn" type = "button" value = "÷" onclick="input('/')"> </td> 
+                </tr>
             </div>
 
             <div>
-            <tr>
-                <td> <input  class = "btn" type = "button" value = "4"> </td> 
-                <td> <input  class = "btn" type = "button" value = "5"> </td> 
-                <td> <input  class = "btn" type = "button" value = "6"> </td> 
-            </tr>
+                <tr>
+                    <td> <input  class = "btn" type = "button" value = "1" onclick="input(1)"> </td> 
+                    <td> <input  class = "btn" type = "button" value = "2" onclick="input(2)"> </td> 
+                    <td> <input  class = "btn" type = "button" value = "3" onclick="input(3)"> </td>
+                    <td> <input  class = "actbtn" type = "button" value = "x" onclick="input('x')"> </td> 
+                </tr>
             </div>
 
             <div>
-            <tr>
-                <td> <input  class = "btn" type = "button" value = "7"> </td> 
-                <td> <input  class = "btn" type = "button" value = "8"> </td> 
-                <td> <input  class = "btn" type = "button" value = "9"> </td> 
-            </tr>
+                <tr>
+                    <td> <input  class = "btn" type = "button" value = "4" onclick="input(4)"> </td> 
+                    <td> <input  class = "btn" type = "button" value = "5" onclick="input(5)"> </td> 
+                    <td> <input  class = "btn" type = "button" value = "6" onclick="input(6)"> </td> 
+                    <td> <input  class = "actbtn" type = "button" value = "-" onclick="input('-')"> </td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td> <input  class = "btn" type = "button" value = "7" onclick="input(7)"> </td> 
+                    <td> <input  class = "btn" type = "button" value = "8" onclick="input(8)"> </td> 
+                    <td> <input  class = "btn" type = "button" value = "9" onclick="input(9)"> </td>
+                    <td> <input  class = "actbtn" type = "button" value = "+" onclick="input('+')"> </td> 
+                </tr>
+            </div>
+
+            <div>
+                <tr> 
+                    <td> <input  class = "btn" type = "button" value = "," onclick="input(',')"> </td> 
+                    <td> <input  class = "btn0" type = "button" value = "0" onclick="input(0)"> </td>
+                    <td> <input  class = "actbtn" type = "button" value = "=" onclick="equal()"> </td> 
+                </tr>
             </div>
 
         </div>
